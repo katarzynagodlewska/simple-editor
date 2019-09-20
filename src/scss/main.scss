@@ -1,0 +1,55 @@
+@import "_normalize";
+@import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap&subset=latin-ext');
+
+body{
+  font-family: 'Open Sans';
+  display: grid;
+}
+.button {
+  font-size: 16px;
+  text-align: center;
+  color: #ffff;
+  grid-row: 7;
+
+  &__load {
+    grid-column: 8;
+    background-color: #4894DB;
+  }
+
+  &__save {
+    grid-column: 9;
+    background-color: #52AC66;
+  }
+}
+
+.textarea {
+  display: block;
+  height: 256px;
+  grid-column: 4 / 10;
+  grid-row: 6;
+  text-align: left;
+  border-radius: 12px;
+  background: rgb(248, 248, 248);
+  border: none;
+  padding: 8px;
+  margin: 0;
+  resize: none;
+  outline: none;
+
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(12, 64px);
+  grid-column-gap: 8px;
+  grid-auto-rows: minmax(20px, auto);
+  grid-row-gap: 8px;
+  }
+
+.title {
+  grid-column: 4 / 6;
+  grid-row: 5;
+  font-size: 20px;
+  
+  }
