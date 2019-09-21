@@ -11,6 +11,7 @@ body{
   text-align: center;
   color: #ffff;
   grid-row: 7;
+  border: none;
 
   &__load {
     grid-column: 8;
@@ -23,7 +24,7 @@ body{
   }
 }
 
-.textarea {
+.textArea {
   display: block;
   height: 256px;
   grid-column: 4 / 10;
