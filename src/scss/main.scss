@@ -12,17 +12,29 @@ body{
   color: #ffff;
   grid-row: 7;
   border: none;
+  outline: none;
 
   &__load {
     grid-column: 8;
     background-color: #4894DB;
+
+    &:active {
+      background-color: rgb(52, 108, 160);
+    }
+  
   }
 
   &__save {
     grid-column: 9;
     background-color: #52AC66;
+
+    &:active {
+      background-color: rgb(53, 121, 72);
+    }
+  
   }
 }
+
 
 .textArea {
   display: block;
